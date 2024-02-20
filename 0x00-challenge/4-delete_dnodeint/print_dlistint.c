@@ -12,12 +12,6 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	size_t n;
 
-	if (h == NULL)
-	{
-		printf("List is empty");
-		return (0);
-	}
-
 	n = 0;
 	while (h)
 	{
