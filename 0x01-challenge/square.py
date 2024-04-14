@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''Class square servers as a base class'''
 
-class square():
+class Square():
     '''class square as a base clase'''
     width = 0
     height = 0
@@ -16,7 +16,7 @@ class square():
         """ Area of the square """
         return self.width * self.height
 
-    def PermiterOfMySquare(self):
+    def permiter_of_my_square(self):
         '''calculates the perimeter of the square'''
         return (self.width * 2) + (self.height * 2)
 
