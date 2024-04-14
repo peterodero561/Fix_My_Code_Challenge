@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+'''Class square servers as a base class'''
 
 class square():
-    
+    '''class square as a base clase'''
     width = 0
     height = 0
 
     
     def __init__(self, *args, **kwargs):
+        '''initializes the square object'''
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -15,9 +17,11 @@ class square():
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        '''calculates the perimeter of the square'''
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        '''what to print if the object is passed as arg of print'''
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
